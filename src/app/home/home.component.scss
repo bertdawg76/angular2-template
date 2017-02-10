@@ -1,0 +1,636 @@
+@import '../../scss/mixins';
+
+.Home__wrapper {
+  display: flex;
+  flex-direction: column;
+  /*transform: translateY(-107px);*/
+  z-index: -1;
+
+}
+
+
+.Home__first {
+
+  height: 800px;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../images/pics/running.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center, center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+
+  div {
+    color: white;
+    text-align: center;
+  }
+
+  h3 {
+    padding-top: 40px;
+    font-style: italic;
+  }
+
+  img {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .site__button {
+    border-radius: 40px;
+    height: 75px;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    font-style: italic;
+    background-color: #FF0058;
+    border: none;
+    margin-top: 10%;
+  }
+
+
+}
+
+.Home__second {
+
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+
+  &__clock{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    background-color: #FF0058;
+
+  }
+
+  &__logo {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;*/
+    align-self: center;
+    height: 50%;
+    width: 50%;
+    background: url('../../images/logos/stopwatch (2).svg') no-repeat center center;
+     img {
+       fill: white;
+     }
+
+
+  }
+
+
+  &__dialog{
+
+    /*display: flex;
+    flex-direction: column;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    /*margin-bottom: 7%;*/
+   /* justify-content: space-around*/;
+    width: 55%;
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    line-height: 2;
+    /*overflow: auto;*/
+    display: inline-block;
+
+    .site__button {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      height: 40px;
+      width: 200px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #FF0058;
+      font-style: italic;
+      background-color: Transparent;
+      border: 2px solid #FF0058;
+      margin-top: 50px;
+    }
+  }
+}
+
+.Home__third {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../images/pics/dirt_background.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center, center;
+
+
+  div {
+    margin-left: 10%;
+    color: white;
+  }
+
+  h6 {
+    font-style: italic;
+  }
+
+
+  .site__button1 {
+    border-radius: 40px;
+    height: 40px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 900;
+    color: white;
+    font-style: italic;
+    background-color: #FF0058;
+    border: none;
+
+  }
+
+  .site__button2 {
+    border-radius: 40px;
+    height: 40px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 900;
+    color: white;
+    font-style: italic;
+    background-color: Transparent;
+    border: 2px solid white;
+    margin-left: 20px;
+
+  }
+
+
+}
+
+.Home__fourth {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  border-top: 5px solid #FF0058;
+
+  &__dialog {
+
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-around;*/
+    display: inline-block;
+
+    width: 55%;
+    background-color: white;
+    color: black;
+    text-align: end;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 2;
+    font-weight: bold;
+
+    .site__button3 {
+      border-radius: 40px;
+      height: 40px;
+      width: 200px;
+      font-size: 14px;
+      font-weight: 900;
+      color:#FF0058 ;
+      font-style: italic;
+      background-color: white;
+      border: 2px solid #FF0058;
+      margin-bottom: 10px;
+
+    }
+  }
+
+  &__logo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    background-color: white;
+    align-self: center;
+    height: 100%;
+    /*background: url('../../images/logos/Page 1.svg') no-repeat center center;*/
+    img {
+      background: no-repeat center center;
+    }
+  }
+}
+
+.Home__fifth {
+  display: flex;
+
+  flex-flow: row wrap;
+
+  &__pic {
+    height: inherit;
+    overflow: hidden;
+    resize: both;
+
+
+    width: 33.33333%;
+    img {
+
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  &__pic:hover {
+    border: 2px solid #FF0058;
+  }
+
+
+
+
+
+
+
+}
+
+
+
+.first {
+  background-color: #FF0058;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+
+}
+
+.first__dialog {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.first__social {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+}
+
+.first__list {
+  li {
+    text-align: center;
+    color: white;
+  }
+}
+
+.fa {
+  background-color: white;
+  border-radius: 30px;
+  color: #FF0058;
+  height: 30px;
+  line-height: 30px;
+  margin: auto 6px;
+  width: 30px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  font-weight: bolder;
+}
+
+.Home__fourth__small {
+  display: none;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-button {
+  border-radius: 40px;
+  height: 40px;
+  width: 200px;
+  font-size: 14px;
+  font-weight: 900;
+  color:#FF0058 ;
+  font-size: 16px;
+  font-style: italic;
+  background-color: white;
+  border: 2px solid #FF0058;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 1160px){
+  .Home__fourth {
+    &__dialog {
+      display: inline-block;
+      line-height: 1.6;
+      width: 60%;
+
+      h4 {
+        font-size: 24px;
+      }
+    }
+
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+      background-color: white;
+      align-self: center;
+      height: 100%;
+      /*background: url('../../images/logos/Page 1.svg') no-repeat center center;*/
+      img {
+        background: no-repeat center center;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  .Home__first {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .Home__fourth {
+    display: none;
+  }
+  .Home__second__clock {
+    display: none;
+  }
+
+  .Home__fourth__small {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+
+
+    &__header{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: black;
+
+
+      img {
+        width: 80%;
+        align-self: center;
+
+      }
+
+      h5 {
+        width: 80%;
+        align-self: center;
+      }
+    }
+
+    &__body {
+      display: inline-block;
+      line-height: 1.6;
+      color: black;
+
+
+      .site__button3 {
+        border-radius: 40px;
+        height: 30px;
+        width: 150px;
+        font-size: 14px;
+        font-weight: 900;
+        color: #FF0058;
+        font-style: italic;
+        background-color: white;
+        border: 2px solid #FF0058;
+        margin-bottom: 10px;
+
+      }
+    }
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  .Home__fifth__pic {
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: inherit;
+    }
+  }
+
+
+
+  .Home__second {
+
+    &__dialog {
+      display: inline-block;
+      width: 100%;
+      line-height: 2;
+
+      .site__button {
+        margin-bottom: 10px;
+
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 600px){
+
+  .Home__fifth__pic {
+    width: 100%;
+    img {
+      width: 100%;
+      height: inherit;
+    }
+  }
+
+  .first {
+    height: 350px;
+  }
+
+  .Home__second {
+
+    &__dialog {
+      width: 100%;
+      line-height: 2;
+
+      .site__button {
+        margin-bottom: 10px;
+
+        h4 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .Home__third {
+    display: flex;
+    flex-direction: column;
+
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../images/pics/dirt_background.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center, center;
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+    }
+
+    div {
+      margin-left: 10%;
+      color: white;
+    }
+
+    h1 {
+      font-size: 48px;
+
+    }
+
+
+    .site__button1 {
+      border-radius: 40px;
+      height: 40px;
+      width: 150px;
+      font-size: 14px;
+      font-weight: 900;
+      color: white;
+      font-style: italic;
+      background-color: #FF0058;
+      border: none;
+
+    }
+
+    .site__button2 {
+      border-radius: 40px;
+      height: 40px;
+      width: 150px;
+      font-size: 14px;
+      font-weight: 900;
+      color: white;
+      font-style: italic;
+      background-color: Transparent;
+      border: 2px solid white;
+      margin-left: 20px;
+
+    }
+
+
+  }
+
+
+}
+
+@media screen and (max-width: 480px){
+
+  .Home__first {
+
+    .site__button {
+      border-radius: 40px;
+      height: 60px;
+      width: 280px;
+      font-size: 20px;
+      font-weight: 900;
+      color: white;
+      font-style: italic;
+      background-color: #FF0058;
+      border: none;
+      margin-top: 10%;
+    }
+  }
+
+  .Home__second {
+    &__dialog {
+      line-height: 1.6;
+    }
+  }
+}
+
+@media screen and (max-width: 410px){
+  .Home__third {
+    h1 {
+      font-size: 36px;
+    }
+
+    .site__button1 {
+      border-radius: 40px;
+      height: 35px;
+      width: 120px;
+      font-size: 14px;
+      font-weight: 900;
+      color: white;
+      font-style: italic;
+      background-color: #FF0058;
+      border: none;
+
+    }
+
+    .site__button2 {
+      border-radius: 40px;
+      height: 35px;
+      width: 120px;
+      font-size: 14px;
+      font-weight: 900;
+      color: white;
+      font-style: italic;
+      background-color: Transparent;
+      border: 2px solid white;
+      margin-left: 20px;
+
+    }
+
+
+  }
+}
+
+
+
+
+

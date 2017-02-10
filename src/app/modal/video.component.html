@@ -1,0 +1,11 @@
+<div [@dialog] *ngIf="visible" class="dialog">
+  <ng-content></ng-content>
+  <!--<div class="video-container">
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/6YVBj2o_3mg?autoplay=1"
+                 frameborder="0" allowfullscreen></iframe>
+  </div>-->
+  <button *ngIf="closable" (click)="close()" aria-label="Close" class="dialog__close-btn">X</button>
+  <!--<button (click)="showDialog = !showDialog" class="btn">Close</button>-->
+</div>
+
+<div *ngIf="visible" class="overlay" (click)="close()"></div>

@@ -1,0 +1,28 @@
+@import '../../../../../scss/mixins';
+
+
+.confirm {
+  min-width: 360px;
+  &__title {}
+  &__body {margin-bottom: 36px;}
+  &__buttons {text-align: right;}
+}
+
+.button {
+  padding: 10px;
+  @include bold;
+  color: white;
+  border: none;
+
+  &--green {
+    $green: #5cb85c;
+    background-color: $green;
+    &:hover {background-color: darken($green, 15%);}
+  }
+
+  &--red {
+    $red: #d9534f;
+    background-color: $red;
+    &:hover {background-color: darken($red, 15%);}
+  }
+}

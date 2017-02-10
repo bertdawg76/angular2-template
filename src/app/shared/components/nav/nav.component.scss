@@ -1,0 +1,250 @@
+/*.Nav__wrap {
+
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}*/
+
+.Nav__top {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  z-index: 3;
+
+
+
+}
+
+
+.Nav__start {
+
+  width: 25%;
+}
+
+.Nav__dialog {
+  color: white;
+  width: 50%;
+  text-align: center;
+  font-style: Italic;
+  font-weight: 700;
+
+}
+
+.Nav__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 25%;
+  align-self: center;
+
+
+}
+
+a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  font-weight: bolder;
+}
+
+.fa {
+  color: #FF0058;
+}
+
+.Nav__link {
+  color: #FF0058;
+
+}
+
+.Nav__link:hover {
+  font-weight: bolder;
+}
+
+.Nav__link:active {
+  font-weight: bolder;
+}
+
+
+.Nav__main {
+  position: absolute;
+  margin-top: 3%;
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 5px solid #FF0058;
+  z-index: 2;
+  width: 80%;
+
+}
+
+.Nav__logo {
+  width: 50%;
+  color: white;
+}
+
+.Nav__menu {
+  align-self: center;
+
+  width: 50%;
+}
+
+.Nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  li {
+    justify-content: center;
+    margin-left: 15px;
+    align-self: center;
+    color: white;
+  }
+   a {
+     color: white;
+     text-decoration: none;
+   }
+   a:hover, a:active {
+     color: #FF0058;
+     font-weight: bold;
+   }
+}
+
+.Nav__discount {
+  display: none;
+}
+
+.Nav__bars {
+  display: none;
+}
+
+.nav__cell {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .Nav__start {
+    width: 0%;
+  }
+
+  .Nav__dialog {
+    width: 67%;
+  }
+
+  .Nav__social {
+    width: 33%;
+  }
+
+  .Nav__discount {
+    display: none;
+  }
+
+  .Nav__bars {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 800px){
+  .Nav__text {
+    display: none;
+  }
+
+  .Nav__social {
+    width: 50%;
+  }
+
+  .Nav__dialog {
+    width: 0%;
+  }
+
+  .Nav__discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    font-style: Italic;
+    font-weight: 700;
+    color: #FF0058;
+  }
+
+  .Nav__menu {
+    display: none;
+    width: 0%;
+  }
+
+  .Nav__bars {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #FF0058;
+    width: 50%;
+
+
+
+}
+  .fa {
+    background: Transparent;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+
+  .Nav__main{
+    display: none;
+  }
+  .nav__cell{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    z-index: 2;
+    border-bottom: 3px solid #FF0058;
+
+  }
+
+
+  .Nav__bars {
+
+    color: #FF0058;
+    width: 25%;
+    align-items: flex-end;
+    }
+
+
+
+
+
+
+
+  .Nav__logo {
+    width: 75%;
+  }
+
+  .fa {
+    background: Transparent;
+    border: none;
+  }
+
+  .fa:active {
+    text: bolder;
+  }
+
+
+
+}

@@ -1,0 +1,10 @@
+<div class="confirm">
+  <h4 *ngIf="data.title" class="confirm__title">{{data.title}}</h4>
+
+  <p class="confirm__body">{{data.body}}</p>
+
+  <div class="confirm__buttons">
+    <button class="button button--green" role="button" type="button" (click)="dialogRef.close(data.okText)">{{data.okText}}</button>
+    <button class="button button--red" role="button" type="button" (click)="dialogRef.close(data.cancelText)">{{data.cancelText}}</button>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+{
+  "author": "StartStudio, Inc.",
+  "name": "startstudio-angular-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "StartStudio's Angular 2 Project Template. Webpack, ES6, Sass, Karma.",
+  "bugs": {
+    "url": "https://dev.izeni.net/izeni/startstudio-angular-template/issues"
+  },
+  "repository": {
+    "url": "git@dev.izeni.net:izeni/startstudio-angular-template.git",
+    "type": "git"
+  },
+  "angular-cli": {},
+  "scripts": {
+    "start": "ng serve --host 0.0.0.0 --port 9000",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "~2.4.4",
+    "@angular/compiler": "~2.4.4",
+    "@angular/core": "~2.4.4",
+    "@angular/forms": "~2.4.4",
+    "@angular/http": "~2.4.4",
+    "@angular/material": "^2.0.0-beta.1",
+    "@angular/platform-browser": "~2.4.4",
+    "@angular/platform-browser-dynamic": "~2.4.4",
+    "@angular/router": "~3.4.4",
+    "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "js-data": "^2.9.0",
+    "js-data-http": "^2.2.2",
+    "rxjs": "5.0.3",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.7.6"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^2.4.4",
+    "@types/jasmine": "^2.5.38",
+    "@types/node": "^6.0.42",
+    "angular-cli": "1.0.0-beta.26",
+    "codelyzer": "~2.0.0-beta.1",
+    "jasmine-core": "2.5.2",
+    "jasmine-spec-reporter": "2.5.0",
+    "karma": "1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-remap-istanbul": "^0.2.1",
+    "protractor": "~4.0.13",
+    "ts-node": "1.2.1",
+    "tslint": "^4.4.1",
+    "typescript": "~2.1.5",
+    "webdriver-manager": "10.2.5"
+  }
+}
